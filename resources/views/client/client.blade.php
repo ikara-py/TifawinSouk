@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Test</h1>
-    <p>ssssss</p>
+    <h1>client</h1>
+    <h2>{{ $name }}</h2>
+    <h2>{{ $age }}</h2>
+    <p>zzzzzz</p>
 </body>
 </html>
