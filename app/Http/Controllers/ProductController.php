@@ -10,16 +10,9 @@ class ProductController extends Controller
 {
     public function index(Request $request)
     {
-        $allCategories = Category::all();
-        $query = Product::with('category');
+        $products = Product::all();
         
-        if ($request->has('category') && $request->category != '') {
-            $query->where('category_id', $request->category);
-        }
-        
-        $products = $query->get();
-        
-        return view('products.index', compact('products', 'allCategories'));
+        return view('products.index', compact('products'));
     }
 
     public function create()
