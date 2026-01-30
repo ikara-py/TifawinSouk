@@ -24,7 +24,7 @@
                 <th class="text-left p-2">Name</th>
                 <th class="text-left p-2">Slug</th>
                 <th class="text-left p-2">Description</th>
-                <th class="text-left p-2">Products</th>
+
                 <th class="text-left p-2">Actions</th>
             </tr>
         </thead>
@@ -35,7 +35,7 @@
                 <td class="p-2 font-bold">{{ $category->nom }}</td>
                 <td class="p-2">{{ $category->slug }}</td>
                 <td class="p-2">{{ $category->description }}</td>
-                <td class="p-2">{{ $category->products->count() }}</td>
+
                 <td class="p-2">
                     <a href="/categories/{{ $category->id }}/edit" class="px-2 py-1 border mr-2">Edit</a>
                     <form action="/categories/{{ $category->id }}" method="POST" class="inline">
